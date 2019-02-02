@@ -1,0 +1,98 @@
+
+Hjelle says, "As an example, you can call len() on any Python object that defines a .__len__() method."
+Is that true for all functions? For example, if you define a .__abc__ method does that create an abc function?
+    No, the len() function is defined, more or less, as
+    def len(obj):
+        return obj.__len__()
+    so one would need to define a seperate abc() function that does the same thing
+
+
+
+What does PEP stand for?
+    Python Enhancement Proposal. Basically the source for suggesting major changes and improvements for python
+
+
+When do you recommend using type comments and when type hints?
+    Type comments should be used in code written in python 3.5 and prior. Else, hints are better.
+
+
+How do you write card suits: "♠ ♡ ♢ ♣"?
+    by copy pasting it in from the internet
+    More likely by using the alt codes for html.
+
+
+
+What is random.shuffle?
+    A function in the python module 'random' that randomly shuffles the items in a sequence.
+
+
+
+Do you understand how deal_hands() works?
+    the deck is divided into 4 sequences using the syntax
+    seq[start:end:step]
+    so, 'deck[0::4]' starts at the 0th position and grabs every fourth card until the end of the deck.
+    All 'hands' start at +1 index to ensure no players have an identical card
+
+
+What does names = "P1 P2 P3 P4".split() do?
+    returns the list ["P1", "P2", "P3", "P4"] which is the original string split at the spaces.
+
+
+
+What does <for name, cards in hands.items()> do?
+    "For every name-cards combination in the dictionary 'hands', do..."
+
+
+
+What does <card_str = " ".join(f"{s}{r}" for (s, r) in cards)> do?
+    Creates a string by making a smaller string of the suit and rank of every card
+    Then joining them all together with spaces in between
+
+
+
+In the line <version: Tuple[int, int, int] = (3, 7, 1)> the type of version is Tuple[int, int, int].
+Does that mean that the type of version is a list of three ints?
+    No, it means it is always a Tuple with 3 int elements.
+
+
+
+
+In
+from typing import List, Tuple
+Card = Tuple[str, str]
+Card is a type alias. Is it also an object the program can manipulate?
+For example, can you write and execute: print(Card)?
+    Executing 'print(Card)', you get 'typing.Tuple[int,int,int]'
+    Aliases from typing are indeed objects that can be manipulated, but I do not believe that is good practice.
+
+
+
+In the method player_order, what does the return line return?
+    It returns all the names of the players after the index given, followed by all the names of the players prior
+
+
+
+
+What does it mean to say that "int is a subtype of float but not a subclass of float."?
+    Every int can be considered a float, but not every float can be considered an int.
+    This means that int does not retain all the functions or qualities of a float
+
+
+
+
+When I ran
+
+reveal_type(choose(["Guido", "Jukka", "Ivan"]))
+reveal_type(choose([1, 2, 3]))
+reveal_type(choose([True, 42, 3.14]))
+reveal_type(choose(["Python", 3, 7]))
+
+I got Choosable? as the revealed type in all cases, which is not what Hjelle got. What did you get?
+    TODO:: RUN CODE ONCE MYPY and CONFIGURATION ARE ADDED
+
+
+
+
+Which parts of this tutorial should you expect to understand, to remember?
+What should you do about the other parts? How do you deal with situations in which there is
+more information than you can handle?
