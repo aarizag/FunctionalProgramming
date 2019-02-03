@@ -12,7 +12,7 @@
     <SUITE FILE_PATH="coverage/FunctionalProgramming$cosine.coverage" NAME="cosine Coverage Results" MODIFIED="1548872789077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Intro" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$temp.coverage" NAME="temp Coverage Results" MODIFIED="1548872758296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Intro" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$Python3_7.coverage" NAME="Python3_7 Coverage Results" MODIFIED="1548872735304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Intro" />
-    <SUITE FILE_PATH="coverage/FunctionalProgramming$goldbach_conjecture.coverage" NAME="goldbach_conjecture Coverage Results" MODIFIED="1549149917127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IntroToHaskell" />
+    <SUITE FILE_PATH="coverage/FunctionalProgramming$goldbach_conjecture.coverage" NAME="goldbach_conjecture Coverage Results" MODIFIED="1549152833207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IntroToHaskell" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/IntroToHaskell/class_notes.hs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="64" lean-forward="true" selection-start-line="2" selection-end-line="3" selection-end-column="64" />
+              <caret line="3" column="64" selection-start-line="2" selection-end-line="3" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="204">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state>
+              <caret line="93" column="3" lean-forward="true" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
                 <element signature="e#67#155#1" />
@@ -55,10 +55,10 @@
                 <element signature="e#840#1060#1" />
                 <element signature="e#1111#1131#0" />
                 <element signature="e#1227#1235#1" />
+                <element signature="e#734#767#0" />
                 <element signature="e#1416#1424#1" />
                 <element signature="e#1956#2089#0" />
                 <element signature="e#2076#2084#1" />
-                <element signature="e#2199#2496#0" />
               </folding>
             </state>
           </provider>
@@ -72,6 +72,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -88,8 +91,8 @@
         <option value="$PROJECT_DIR$/IntroToHaskell/test.hs" />
         <option value="$PROJECT_DIR$/IntroToHaskell/class_notes.hs" />
         <option value="$PROJECT_DIR$/IntroToHaskell/homework.hs" />
-        <option value="$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.hs" />
         <option value="$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.py" />
+        <option value="$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.hs" />
       </list>
     </option>
   </component>
@@ -99,6 +102,7 @@
     <option name="width" value="980" />
     <option name="height" value="521" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -268,12 +272,12 @@
       <workItem from="1548870246370" duration="379000" />
       <workItem from="1548870647497" duration="3597000" />
       <workItem from="1548979138866" duration="751000" />
-      <workItem from="1549061104209" duration="21425000" />
+      <workItem from="1549061104209" duration="24224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38938000" />
+    <option name="totallyTimeSpent" value="41737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -338,7 +342,7 @@
     <entry file="file://$PROJECT_DIR$/IntroToHaskell/class_notes.hs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="64" lean-forward="true" selection-start-line="2" selection-end-line="3" selection-end-column="64" />
+          <caret line="3" column="64" selection-start-line="2" selection-end-line="3" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -385,15 +389,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state>
+          <caret line="93" column="3" lean-forward="true" selection-start-line="93" selection-start-column="3" selection-end-line="93" selection-end-column="3" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
             <element signature="e#67#155#1" />
@@ -401,10 +405,10 @@
             <element signature="e#840#1060#1" />
             <element signature="e#1111#1131#0" />
             <element signature="e#1227#1235#1" />
+            <element signature="e#734#767#0" />
             <element signature="e#1416#1424#1" />
             <element signature="e#1956#2089#0" />
             <element signature="e#2076#2084#1" />
-            <element signature="e#2199#2496#0" />
           </folding>
         </state>
       </provider>

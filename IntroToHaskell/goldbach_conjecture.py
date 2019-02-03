@@ -92,7 +92,7 @@ def conjecture_test(g: int, primes) -> [int]:
     max_test - the maximum number to be tested against the conjecture
     primes - a list of prime integers that have already been evaluated
 """
-def goldman_conjecture(max_test: int = 10000, primes: [int] = None) -> None:
+def goldman_conjecture(max_test: int = 6000, primes: [int] = None) -> None:
     odd_nums: [int] = [i for i in range(3, max_test, 2)]  # Odd numbers 3 -> 10000
     exceptions: [int] = []  # list of exceptions to the conjecture
 
