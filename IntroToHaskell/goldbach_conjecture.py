@@ -71,7 +71,7 @@ def is_a_square(num: int) -> bool:
     g - integer to be checked
     primes - list of evaluated prime numbers
 """
-def conjecture_test(g: int, primes) -> [int]:
+def conjecture_test(g: int, primes: [int]) -> [int]:
     # Taking advantage of the lazy evaluation of find_primes, primes will only ever have one element larger than g,
     # so we can speed up the evaluation by simply grabbing the primes we need with indexing.
     # If using a pre-loaded, large list of primes, use:
@@ -92,7 +92,7 @@ def conjecture_test(g: int, primes) -> [int]:
     max_test - the maximum number to be tested against the conjecture
     primes - a list of prime integers that have already been evaluated
 """
-def goldman_conjecture(max_test: int = 6000, primes: [int] = None) -> None:
+def goldbach_conjecture(max_test: int = 6000, primes: [int] = None) -> None:
     odd_nums: [int] = [i for i in range(3, max_test, 2)]  # Odd numbers 3 -> 10000
     exceptions: [int] = []  # list of exceptions to the conjecture
 
@@ -105,6 +105,6 @@ def goldman_conjecture(max_test: int = 6000, primes: [int] = None) -> None:
 
 
 start = time.time()
-goldman_conjecture()
+goldbach_conjecture()
 total = time.time() - start
 print(total)

@@ -26,9 +26,7 @@ isPrime n = n `elem` (takeWhile (<=n) primes)
 
 -- Compiles a list of numbers made by subtracting a number 'g' by every prime number smaller than it
 g_test :: Integer -> [Integer]
-g_test g = if isASquare [(g-p) `div` 2| p <- takeWhile (<g) primes]
-            then []
-            else [g]
+g_test g = if isASquare [(g-p) `div` 2| p <- takeWhile (<g) primes] then [] else [g]
 
 -- Iterates through a list of numbers and tests to see if they pass or fail Goldbach's Conjecture
 -- Numbers that fail are added to a list and returned
