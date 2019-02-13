@@ -101,10 +101,14 @@ def goldbach_conjecture(max_test: int = 6000, primes: [int] = None) -> None:
         if not is_prime(odd_num, primes):  # only check non-prime odd numbers
             exceptions += conjecture_test(odd_num, primes)
 
-    print(exceptions)
+    return exceptions
 
 
-start = time.time()
-goldbach_conjecture()
-total = time.time() - start
-print(total)
+total = 0
+for i in range(10):
+    start = time.time()
+    exceptions = goldbach_conjecture()
+    total += time.time() - start
+
+print("Average time taken after 10 runs:", (total/10))
+print("Exceptions found:", exceptions)

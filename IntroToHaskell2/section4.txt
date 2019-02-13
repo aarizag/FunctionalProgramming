@@ -1,0 +1,80 @@
+Question: Such a situation would produce an infinite loop in Java. Why doesn't this lead
+to an infinite loop in Haskell? Does it lead to an infinite loop in Python?
+    It still produces an infinite list in Haskell, but since Haskell is lazy,
+    it only evaluates as far as it needs to. Thus, while the list is infinite,
+    Haskell will only look as far as it needs to to find the values it needs.
+    Python is not lazy with recursive evaluation, so the function would need
+    to terminate before the rest of the program to continue.
+
+
+Question: What happens with the following? Explain why.
+> cyc12 = myCycle [1,2]
+-- Is this an infinite loop? What about Python? Why or why not?
+    This is an infinite loop in Haskell but the implementation would need
+    to be different in Python to allow the rest of the program to execute
+    but retain the intended cycle.
+> take 5 cyc12
+-- Does this result in an infinite loop? What about Python? Why or why not?
+    This does not result in an infinite loop in Haskell since the language
+    is lazy. It only evaluates what it needs to.
+
+
+Question: Walk through the step-by-step evaluation of
+> take 5 cyc12
+
+You may assume that take is implemented as follows
+    take 0 _ = []
+    take _ [] = []
+    take n (x:xs) = x : take (n-1) xs
+
+and that (++) is implemented as follows.
+    [] ++ ys = ys
+    (x:xs) ++ ys = x:(xs ++ ys)
+
+For my purposes, I am defining myCycle as:
+    myCycle :: [a] -> [a]
+    myCycle x = x ++ myCycle x
+
+>> cyc12 = myCycle [1,2]
+>> take 5 cyc12
+-> take 5 (cyc12 ++ myCycle cyc12)
+-> take 5 ([1,2] ++ myCycle [1,2])
+-> take 5 (1 : ([2] ++ myCycle [1,2]))
+-> 1 : take 4 ([2] ++ myCycle [1,2])
+-> 1 : take 4 (2 : ([] ++ myCycle [1,2]))
+-> 1 : 2 : take 3 ([] ++ myCycle [1,2])
+-> 1 : 2 : take 3 (myCycle [1,2])
+-> 1 : 2 : take 3 ([1,2] ++ myCycle [1,2])
+-> 1 : 2 : take 3 (1 : ([2] ++ myCycle [1,2]))
+-> 1 : 2 : 1 : take 2 ([2] ++ myCycle [1,2])
+-> 1 : 2 : 1 : take 2 (2 : ([] ++ myCycle [1,2]))
+-> 1 : 2 : 1 : 2 : take 1 ([] ++ myCycle [1,2])
+-> 1 : 2 : 1 : 2 : take 1 (myCycle [1,2])
+-> 1 : 2 : 1 : 2 : take 1 ([1,2] ++ myCycle [1,2])
+-> 1 : 2 : 1 : 2 : take 1 (1 : ([2] ++ myCycle [1,2]))
+-> 1 : 2 : 1 : 2 : 1 : take 0 ([2] ++ myCycle [1,2])
+-> 1 : 2 : 1 : 2 : 1 : []
+
+
+** For a python equivalent of this operation, one would need to define a circular linked list for
+** the operation to not end in an infinite loop or utilize the yield function, e.g. :
+
+    def cycle(iterable):
+        # cycle('ABCD') --> A B C D A B C D A B C D ...
+        saved = []
+        for element in iterable:
+            yield element
+            saved.append(element)
+        while saved:
+            for element in saved:
+                  yield element
+
+** From itertools.cycle()
+
+
+
+Question: Is there a Python equivalent [to using insertion sort to find the smallest element]?
+If so, does it have the same time complexity?
+    There is an equivalent in python, but the complexity would O(n^2) since python would not evaluate it lazily. The
+    entire list would be sorted before pulling the first element.
+
