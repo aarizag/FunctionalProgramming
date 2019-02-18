@@ -5,10 +5,10 @@ while state eval bodyFn extractRes
 
 
 n_primes n =
-    while ((2:[3,5..]), [])
-          (\(_, primes) -> n > length primes)
-          (\(nums, primes) -> (filter (\x -> x `mod` (head nums) /= 0)  nums, head nums : primes ))
-          (\(_,primes) -> reverse primes)
+    while ((2:[3,5..]), [], 0)
+          (\(_, _, ind) -> n > ind)
+          (\(nums, primes, ind) -> (filter (\x -> x `mod` (head nums) /= 0)  nums, head nums : primes, ind+1 ))
+          (\(_,primes, _) -> reverse primes)
 
 
           
