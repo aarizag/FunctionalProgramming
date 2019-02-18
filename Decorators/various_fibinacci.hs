@@ -64,16 +64,14 @@ fib_top_down_iter num_fibs = fib [F num_fibs] []
             | inputs == [] = head stack
             | dispatcher token == 'i' = fib inp (int token : stack)
             | dispatcher token == 'f' =
-                if n <= 2 then fib (inp ++ [I 1]) stack                 --
+                if n <= 2 then fib (inp ++ [I 1]) stack
                 else fib (inp ++ [S "+", F (n-1), F (n-2)]) stack
             | S "+" == token = fib (inp ++ [I (first+second)]) rest
             | otherwise = -1
                 where token = last inputs
                       inp = init inputs
                       n = fibval token
-                      first = head stack
-                      second = head $ tail stack
-                      rest = tail $ tail stack
+                      (first:second:rest) = stack
 
 
 {-
@@ -104,12 +102,44 @@ fib_top_down_iter_with_opt_1 num_fibs = fib [F num_fibs] []
             | otherwise = -1
                 where token = last inputs
                       inp = init inputs
-                      first = head stack
-                      second = head $ tail stack
-                      rest = tail $ tail stack
+                      (first:second:rest) = stack
                       list_iter n
                         | n <= 2 = []
                         | otherwise = [S "+", F (n-1)] ++ list_iter (n-2)
+
+
+
+{-
+def fib_top_down_iter_with_opt_2(n, trace=False):
+    if n <= 0:
+        return 0
+    if n == 2 or n == 1:
+        return 1
+
+    (inp, stack) = (['+', '*', 1, Fib(n), '*', 0, Fib(n-1)], [])
+
+    while inp:
+        [plus, times, ca, fib_a, _, cb, fib_b] = inp
+        nx = fib_a.arg
+        if nx == 2:
+            break
+        next_n = fib_b.arg - 1
+        inp = [plus, times, ca+cb, fib_b, times, ca, Fib(next_n)]
+
+    return ca + cb
+-}
+
+fib_top_down_iter_with_opt_2 num_fibs = fib [S "+", S "*", I 1, F num_fibs, S "*", I 0, F (num_fibs-1)]
+    where fib inputs
+            | num_fibs <= 2 = 1
+            | inputs == [] || (nx == 2) = int ca + (int cb)
+            | otherwise = fib next_inputs
+                where (plus:times:ca:fib_a:_:cb:fib_b: empty) = inputs
+                      nx = fibval fib_a
+                      next_n = fibval fib_b - 1
+                      next_inputs = (plus:times:I (int ca + (int cb)):fib_b:times:ca:(F next_n):[])
+
+
 
 
 
@@ -155,6 +185,4 @@ fib_top_down_iter_with_cache num_fibs = fib [F num_fibs] [] (M.fromList [(1,1),(
                 where token = last inputs
                       inp = init inputs
                       n = fibval token
-                      first = head stack
-                      second = head $ tail stack
-                      rest = tail $ tail stack
+                      (first:second:rest) = stack
