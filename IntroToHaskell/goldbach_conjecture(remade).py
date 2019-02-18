@@ -10,7 +10,7 @@ class goldbach:
     def next_prime(self, floor):
         i = floor if floor % 2 == 1 else floor - 1
         while self.primes[-1] < floor:
-            for p in self.takewhile((lambda x: x < self.sqrt(i)), self.primes):
+            for p in self.takewhile((lambda x: x*x < i), self.primes):
                 if i % p == 0:
                     break
             else:
