@@ -10,6 +10,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/FunctionalProgramming$cosine.coverage" NAME="cosine Coverage Results" MODIFIED="1548872789077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Intro" />
+    <SUITE FILE_PATH="coverage/FunctionalProgramming$Abbott_sCode.coverage" NAME="Abbott'sCode Coverage Results" MODIFIED="1550471752784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Decorators" />
+    <SUITE FILE_PATH="coverage/FunctionalProgramming$walker.coverage" NAME="walker Coverage Results" MODIFIED="1550091926486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class_unrelated" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$goldbach_conjecture_remade_.coverage" NAME="goldbach_conjecture(remade) Coverage Results" MODIFIED="1549605920978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IntroToHaskell" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$temp.coverage" NAME="temp Coverage Results" MODIFIED="1548872758296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Intro" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$Python3_7.coverage" NAME="Python3_7 Coverage Results" MODIFIED="1548872735304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Intro" />
@@ -17,54 +19,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntroToHaskell2/python-submission.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntroToHaskell2/final-haskell-submission.hs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="360" column="43" lean-forward="true" selection-start-line="349" selection-end-line="360" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IntroToHaskell2/nPrimes.hs">
+        <entry file="file://$PROJECT_DIR$/Decorators/various_fibinacci.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="119">
+              <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.py">
+        <entry file="file://$PROJECT_DIR$/Decorators/fibonacci_various.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-                <element signature="e#68#430#1" />
-                <element signature="e#501#1183#0" />
-                <element signature="e#1186#1517#1" />
-                <element signature="e#1569#1589#0" />
-                <element signature="e#1592#1724#1" />
-                <element signature="e#1800#2213#1" />
-                <element signature="e#3108#3489#0" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="147" column="53" lean-forward="true" selection-start-line="146" selection-start-column="4" selection-end-line="147" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture(remade).py">
+        <entry file="file://$USER_HOME$/Downloads/Fibonacci.hs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-            </state>
+            <state relative-caret-position="-204" />
           </provider>
         </entry>
       </file>
@@ -76,6 +52,17 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>otherw</find>
+      <find>(inp:rest)</find>
+      <find>max_fib</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>inp</replace>
+      <replace>num_fibs</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,15 +93,21 @@
         <option value="$PROJECT_DIR$/IntroToHaskell2/while.hs" />
         <option value="$PROJECT_DIR$/IntroToHaskell2/while.py" />
         <option value="$PROJECT_DIR$/IntroToHaskell2/final-haskell-submission.hs" />
+        <option value="$PROJECT_DIR$/class_unrelated/walker.py" />
+        <option value="$PROJECT_DIR$/class_unrelated/cliffwalking_env.py" />
+        <option value="$PROJECT_DIR$/class_unrelated/discrete.py" />
+        <option value="$PROJECT_DIR$/class_unrelated/crawlerControlled.py" />
+        <option value="$PROJECT_DIR$/class_unrelated/graphicsCrawlerDisplay.py" />
         <option value="$PROJECT_DIR$/IntroToHaskell2/nPrimes.hs" />
+        <option value="$PROJECT_DIR$/Decorators/Abbott'sCode.py" />
+        <option value="$PROJECT_DIR$/Decorators/various_fibinacci.hs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="508" />
-    <option name="y" value="-9" />
-    <option name="width" value="981" />
-    <option name="height" value="522" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -132,7 +125,12 @@
             <path>
               <item name="FunctionalProgramming" type="b2602c69:ProjectViewProjectNode" />
               <item name="FunctionalProgramming" type="462c0819:PsiDirectoryNode" />
-              <item name="IntroToHaskell2" type="462c0819:PsiDirectoryNode" />
+              <item name="Decorators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FunctionalProgramming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FunctionalProgramming" type="462c0819:PsiDirectoryNode" />
+              <item name="IntroToHaskell" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -144,7 +142,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/IntroToHaskell2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -166,7 +164,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.goldbach_conjecture">
+  <component name="RunManager" selected="Python.Abbott'sCode">
+    <configuration name="Abbott'sCode" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FunctionalProgramming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Decorators" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Decorators/Abbott'sCode.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python3_7" type="PythonConfigurationType" factoryName="Python">
       <module name="FunctionalProgramming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -255,7 +275,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="walker" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FunctionalProgramming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -263,12 +283,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Intro" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/class_unrelated" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Intro/temp.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Adryel A\PycharmProjects\FunctionalProgramming\class_unrelated\cliffWalker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -279,17 +299,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Python3_7" />
-      <item itemvalue="Python.temp" />
       <item itemvalue="Python.cosine" />
       <item itemvalue="Python.goldbach_conjecture" />
       <item itemvalue="Python.goldbach_conjecture(remade)" />
+      <item itemvalue="Python.walker" />
+      <item itemvalue="Python.Abbott'sCode" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Abbott'sCode" />
+        <item itemvalue="Python.walker" />
         <item itemvalue="Python.goldbach_conjecture" />
         <item itemvalue="Python.goldbach_conjecture(remade)" />
         <item itemvalue="Python.cosine" />
-        <item itemvalue="Python.temp" />
       </list>
     </recent_temporary>
   </component>
@@ -316,11 +338,16 @@
       <workItem from="1549851786228" duration="2292000" />
       <workItem from="1549906891668" duration="664000" />
       <workItem from="1549918338369" duration="3125000" />
+      <workItem from="1550082607613" duration="661000" />
+      <workItem from="1550090528563" duration="2917000" />
+      <workItem from="1550266261410" duration="418000" />
+      <workItem from="1550429736168" duration="14174000" />
+      <workItem from="1550451647953" duration="22606000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67032000" />
+    <option name="totallyTimeSpent" value="107808000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,12 +359,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.31028667" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49820143" weight="0.2291498" />
+      <window_info id="Structure" order="2" sideWeight="0.5009009" side_tool="true" weight="0.47683108" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
@@ -345,7 +372,7 @@
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Python Console" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.43339255" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.43963963" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -353,7 +380,7 @@
       <window_info anchor="bottom" id="TODO" order="12" weight="0.12432432" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="SciView" order="2" weight="0.3288364" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout>
@@ -433,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IntroToHaskell/test.hs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -457,30 +477,6 @@
     <entry file="file://$PROJECT_DIR$/IntroToHaskell2/whileInHaskell.hs" />
     <entry file="file://$USER_HOME$/Downloads/final-haskell-submission.hs">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#68#430#1" />
-            <element signature="e#501#1183#0" />
-            <element signature="e#1186#1517#1" />
-            <element signature="e#1569#1589#0" />
-            <element signature="e#1592#1724#1" />
-            <element signature="e#1800#2213#1" />
-            <element signature="e#3108#3489#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture(remade).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Downloads/python-submission.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -509,17 +505,115 @@
     <entry file="file://$PROJECT_DIR$/IntroToHaskell2/python-submission.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToHaskell2/final-haskell-submission.hs">
+    <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="360" column="43" lean-forward="true" selection-start-line="349" selection-end-line="360" selection-end-column="43" />
+        <state relative-caret-position="481">
+          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#68#430#1" />
+            <element signature="e#501#1183#0" />
+            <element signature="e#1186#1517#1" />
+            <element signature="e#1569#1589#0" />
+            <element signature="e#1592#1724#1" />
+            <element signature="e#1800#2213#1" />
+            <element signature="e#3108#3489#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_unrelated/discrete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_unrelated/cliffwalking_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1457">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_unrelated/cliffWalker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="31" />
+          <folding>
+            <element signature="e#834#878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_unrelated/crawlerControlled.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8857">
+          <caret line="523" column="30" selection-start-line="523" selection-start-column="30" selection-end-line="523" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_unrelated/graphicsCrawlerDisplay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5253">
+          <caret line="318" column="18" selection-start-line="318" selection-start-column="18" selection-end-line="318" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IntroToHaskell2/nPrimes.hs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntroToHaskell2/final-haskell-submission.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-623">
+          <caret line="295" column="12" selection-start-line="295" selection-start-column="6" selection-end-line="295" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Fibonacci.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Decorators/Abbott'sCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture(remade).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Decorators/fibonacci_various.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="147" column="53" lean-forward="true" selection-start-line="146" selection-start-column="4" selection-end-line="147" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Decorators/various_fibinacci.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
         </state>
       </provider>
     </entry>
