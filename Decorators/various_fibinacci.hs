@@ -1,3 +1,9 @@
+{-
+Author: Adryel Arizaga
+Date: 2/18/19
+No Rights Reserved tbh
+-}
+
 import qualified Data.Map as M
 
 {-
@@ -10,7 +16,7 @@ fib_top_down_rec n
 {-
 Simple Bottom up 'iterative' Fibonacci
 -}
-fib_bottom_up_iter(n) = fib 1 1 0
+fib_bottom_up_iter n = fib 1 1 0
     where fib c ka kb
             | c < n = fib (c+1) (ka+kb) ka
             | otherwise = ka
@@ -109,37 +115,53 @@ fib_top_down_iter_with_opt_1 num_fibs = fib [F num_fibs] []
 
 
 
+
 {-
-def fib_top_down_iter_with_opt_2(n, trace=False):
-    if n <= 0:
-        return 0
-    if n == 2 or n == 1:
-        return 1
+Top Down Iterative Fibonacci Algorithm with another optimization
 
-    (inp, stack) = (['+', '*', 1, Fib(n), '*', 0, Fib(n-1)], [])
+"""
+    Same as fib_top_down_iter but with more efficient list processing.
+    Expands the first recursive call and groups results.
+    Since this approach need keep track only of the n it is up to and
+    the coefficients of n-1 and n-2, it does so directly in a tuple.
+    The result is equivalent to buttom-up iter.
+"""
+    - Abbott
 
-    while inp:
-        [plus, times, ca, fib_a, _, cb, fib_b] = inp
-        nx = fib_a.arg
-        if nx == 2:
-            break
-        next_n = fib_b.arg - 1
-        inp = [plus, times, ca+cb, fib_b, times, ca, Fib(next_n)]
+Guard Descriptions:
+    1st: If the original number of Fibonacci numbers to evaluate is <= 2, return 1
+    2nd: if the list is empty or the value of the next number to break down is 2:
+        return ca + cb
+    3rd: otherwise iterate through the next inputs
 
-    return ca + cb
+Variable Description:
+    ca, cb: the numbers being summed together for the sequence
+    fib_a,b: the numbers being continuously broken down to n-1 and n-2
+    nx, next_n = the literal int values of fib_a and fib_b-1
+    next_inputs: the updated sequence recursively called with fib
+
+Note:
+    I removed the stack  and the strings "+", "*" from the initial and recursive calls to the function because,
+    unlike the previous functions, they are unused in determining actions to take and there
+    is no console output to show the trace.
+
+    If you want to include them, replace the initial call with
+        fib [S "+", S "*", I 1, F num_fibs, S "*", I 0, F (num_fibs-1)]
+    the string of variables with
+        (plus:times:ca:fib_a:_:cb:fib_b: empty) = inputs
+    and next_inputs with
+        next_inputs = (plus:times:ca:fib_a:_:cb:fib_b: empty) = inputs
 -}
 
-fib_top_down_iter_with_opt_2 num_fibs = fib [S "+", S "*", I 1, F num_fibs, S "*", I 0, F (num_fibs-1)]
+fib_top_down_iter_with_opt_2 num_fibs = fib [I 1, F num_fibs, I 0, F (num_fibs-1)]
     where fib inputs
             | num_fibs <= 2 = 1
             | inputs == [] || (nx == 2) = int ca + (int cb)
             | otherwise = fib next_inputs
-                where (plus:times:ca:fib_a:_:cb:fib_b: empty) = inputs
+                where (ca:fib_a:cb:fib_b: __) = inputs  -- __ is the empty tail of the list
                       nx = fibval fib_a
                       next_n = fibval fib_b - 1
-                      next_inputs = (plus:times:I (int ca + (int cb)):fib_b:times:ca:(F next_n):[])
-
-
+                      next_inputs = (I (int ca + (int cb)):fib_b:ca:(F next_n): __)
 
 
 

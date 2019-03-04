@@ -1,0 +1,16 @@
+from operator import mod
+
+def luhn_algorithm(acc_num) = mod(evens+odds, 10) == 0 where:
+    digits = digit_to_list(acc_num)
+    evens = digits[-1::-2] |> sum
+    odds = digits[-2::-2] |> fmap$(x -> sum(digit_to_list(x*2))) |> list |> sum
+
+def digit_to_list(n) = str(n) |> map$(int) |> list
+
+t1 = 79927398713  # True
+t2 = 79927398714  # False
+
+luhn_algorithm(t1) |> print
+luhn_algorithm(t2) |> print
+
+    
