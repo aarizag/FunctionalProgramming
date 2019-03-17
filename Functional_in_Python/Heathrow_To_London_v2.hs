@@ -3,10 +3,11 @@ data Path = Path
             {roads :: [Integer],
              dist  :: Integer} deriving (Show, Eq)
 
--- Data type describing each road with the time it takes to traverse it, and a value denoting its location (A, B, V)
+-- Data type describing each road with the time it takes to traverse it, an ID number, and a value denoting its location (A, B, V)
 -- This is currently unused
 data Road = Road
             {time :: Integer,
+             iden :: Integer,
              val :: String} deriving (Show)
 
 -- Test Input given in 3s visualized sas (top left : bottom left : vertical right connecting the two: [...])

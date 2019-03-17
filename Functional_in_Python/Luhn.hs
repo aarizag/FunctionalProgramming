@@ -37,6 +37,8 @@ double_every_other int_list = deo $ reverse int_list
         deo (x:[]) = [x]
         deo (x0:x1:xs) = x0 : seperate_digits (2*x1) ++ deo xs
 
+double_eo ints = zipWith (\(x,y) -> sum . seperate_digits $ x*y) ints (cycle [1,2])
+
 {-
 Validate - Validate an "account number" via the Luhn algorithm (as written in the CSCI 490 problem set)
     1) Double the value of every second digit beginning from the right
