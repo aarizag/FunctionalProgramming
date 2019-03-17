@@ -1,0 +1,143 @@
+
+################################
+## Part 1
+poem = "occasional clouds\none gets a rest\nfrom moon-viewing"
+
+
+def lines(poem):
+    return poem.split('\n')
+
+
+def sort(lines):
+    lines.sort()
+    return lines
+
+
+def unlines(lines):
+    return lines | > '\n'.join | > repr  # same as repr('\n'.join(lines))
+
+
+def reverse(lines):
+    return lines[::-1]
+
+
+def take2(lines):
+    return lines[0:2]
+
+
+def intend(s):
+    return '    ' + s;
+
+
+def yell(s):
+    return s.upper() if s.endswith('!!!') else s.upper() + '!!!';
+
+
+def words(poem):
+    return poem.split()
+
+
+def unwords(wordList):
+    return str(' '.join(wordList))
+
+
+def sortLines(poem):
+    return poem | > lines | > sort | > unlines
+
+
+def reverseLines(poem):
+    return poem | > lines | > reverse | > unlines
+
+
+def firstTwoLines(poem):
+    return poem | > lines | > take2 | > unlines
+
+
+def indentEachLine(poem):
+    return poem | > lines | > map$(intend) | > unlines
+
+
+def yellEachLine(poem):
+    return poem | > lines | > map$(yell) | > unlines
+
+
+def yellEachWord(poem):
+    return poem | > words | > map$(yell) | > unwords
+
+
+def yellEachWordOnEachLine(poem):
+    return poem | > yellEachLine | > yellEachWord
+
+
+poem | > sortLines | > print
+
+poem | > reverseLines | > print
+
+poem | > firstTwoLines | > print
+
+poem | > indentEachLine | > print
+
+poem | > yellEachLine | > print
+
+poem | > yellEachWord | > print
+
+poem | > yellEachWordOnEachLine | > print
+
+################################
+## Part 2a/b/c
+
+import operator
+import itertools
+
+empty = []
+
+oneWord = ["apple"]
+
+twoWords = ["banana", "cantaloupe"]
+
+mystery1 = ["pear"]
+
+mystery2 = ["peach"] + oneWord
+
+mystery3 = itertools.repeat("pineapple", 2) | > list
+
+
+# mystery3 = itertools.repeat("pineapple") |> list
+
+def dropOne(l):
+    if not l:
+        return []
+    else:
+        l.pop(0)
+        return l
+
+
+def justOne(l):
+    return [] if not l else l[:1]
+
+
+oneWord | > justOne | > print
+
+
+################################
+## Part 2d
+
+def findAfterStar(s):
+    slist = list(s)
+    for index, char in enumerate(slist):
+        if char == '*':
+            return slist[index + 1]
+    return None
+
+
+def findAfterChar(c, s):
+    slist = list(s)
+    for index, char in enumerate(slist):
+        if char == c:
+            return slist[index + 1]
+    return None
+
+
+"dh*ruvalv" | > findAfterStar | > print
+
+('v', "dhruvalv") | * > findAfterChar | > print

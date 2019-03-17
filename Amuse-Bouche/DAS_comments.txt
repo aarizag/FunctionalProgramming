@@ -1,0 +1,150 @@
+
+ -- def doubleAndSum_1a(xs: List[int]) -> int:
+    Iterates through the items by incrementing i.
+    Accumulates the sum of the items in the list by multiplying its items
+    by 1 or 2 based on (i mod 2).
+
+ -- def doubleAndSum_1b(xs: List[int]) -> int:
+    Same as above, but uses a for loop with a variable i instead of
+    a while loop with i declared outside of it
+
+ -- def doubleAndSum_1c(xs: List[int]) -> int:
+    Equivalent to 1a in functionality where items are iterated with a
+    variable i and summed into the accumulator
+    Difference is that (acc, i) is stored in the parameters instead of
+    local variables
+
+ -- def doubleAndSum_1d(xs: List[int]) -> int:
+    Calls the reduce with:
+    - A lambda function that sums the items of the list into the accumulator
+        - Applies the function with the necessary number of arguments
+          from the sequence (in this case, it's a list of 1 -> the size
+          of xs) until it runs out of items
+        - reduce places the initial=0 argument in front of the items
+          from the sequence in the lambda function and will serve as
+          the default once the end of the sequence is reached.
+        - Multiplies the number in the sequence by 2 or 1, like the
+          previous functions.
+    - The sequence xs; numbers to be summed
+    - 0; the initial value carried through the reduce function
+
+ -- def doubleAndSum_1e(xs: List[int]) -> int:
+    Creates a list of the items in xs multiplied by either 1 or 2 based on
+    their position in the list.
+    Returns the sum of the resulting list
+
+
+ -- def doubleAndSum_2a1(xs: List[int]) -> int:
+    While i is less than the size of the list, increment i by 2 per step
+    Add the i'th item to the accumulator
+    If there's at least one more item past i, add the next item * 2
+
+ -- def doubleAndSum_2a2(xs: List[int]) -> int:
+    increments through pattern matching, where the first and second elements
+    of the list are assigned to variables and the list is reassigned to the
+    remainder of the list's elements.
+    [0] is added to the list every time to ensure that the list will always
+    have enough elements to iterate through every original element of the list
+    in the worst case scenario of len xs = 3
+        NOTE: This adds a 0 every while iteration, meaning that runtime is (2n)
+        rather than (n); if you remove the (+[0]) from the iteration and add it
+        before the loop, the effect is the same, regardless if the list size is
+        even or odd
+
+ -- def doubleAndSum_2b(xs: List[int]) -> int:
+    Equivalent to 2a1, but using a for loop to assign and iterate
+    2 steps at a time with i
+
+ -- def doubleAndSum_2c1(xs: List[int]) -> int:
+    Recursive method with 2 exit conditions:
+        if the list is empty, return 0
+        if list is size 1, return the one element
+        else add the first element with 2 * second element
+            + the recursive call on the remaining elements
+
+ -- def doubleAndSum_2c2(xs: List[int]) -> int:
+    Recursive call on inner function with pattern matching
+        x0 and x1 are both assigned in every recursive call by pattern
+        matching the first 2 elements of xs_aux to x0/x1 and the
+        remainder of the list to xs_aux.
+        returns once the list is empty
+    NOTE: in the instance that there are not enough elements in xs_aux
+    to assign to x0 and/or x1 are assigned 0, so the total doesn't change
+
+ -- def doubleAndSum_2d(xs: List[int]) -> int:
+    Similar to 1d, where reduce applies a function with 2 arguments (an
+    accumulator, and indexes of the list but incremented by 2 this time)
+    and multiplies every second element by 2.
+    Sums them all and returns the total.
+
+ -- def doubleAndSum_2e(xs: List[int]) -> int:
+    Similar to 1e
+    Creates a list with every item and (it's successors multiplied by 2
+    if there is one)
+    sum the list
+
+ -- def doubleAndSum_3a(xs: List[int]) -> int:
+    Creates an enumeration of the list; [(index, element)]
+    Sum each element and Multiplies each element by 1 or 2 depending on
+    its location in the list
+    The enumeration is then assigned to the list of elements minus the first
+
+ -- def doubleAndSum_3b(xs: List[int]) -> int:
+    Same as 3a, but declares the enumeration, i, and the element variable
+    are all declared naturally in the for loop
+
+ -- def doubleAndSum_3c(xs: List[int]) -> int:
+    The inner function takes the enumeration as a parameter and an accumulator
+    that the elements are added to (starts at zero)
+    Every recursive call adds the element (multiplied by either 2 or 1) to the
+    accumulator and the enumerated list minus the first element
+
+
+ -- def doubleAndSum_3d(xs: List[int]) -> int:
+    Reduce will call incr_acc() on every (index, element) tuple in the enumeration
+    of xs and add the return value to the accumulator.
+    Returns the sum of ever number multiplied by 1 or 2.
+
+ -- def doubleAndSum_3e1(xs: List[int]) -> int:
+    Equivalent to 1e, except instead of creating a range and using that to
+    grab individual elements, it creates an enumeration of the list and
+    iterates through the tuples.
+
+ -- def doubleAndSum_3e2(xs: List[int]) -> int:
+    Creates a list of tuples by zipping a cycle of 1 and 2 to xs -- E.G.:
+        [(1, x1), (2, x2), (1, x3), (2, x4), ... ]
+    And uses that to create of a list by multiplying the pairs -- E.G :
+        [x1, 2x2, x3, 2x4, ... ]
+    Sums the list
+
+ -- def doubleAndSum_4a1(xs: List[int]) -> int:
+    Creates a list of elements:
+        For every element in xs, combine it with every element in cycle([1,2])
+        with the function "mul" (multiply the elements together)
+        Every other element is multiplied by 2
+    Sums that list
+
+ -- def doubleAndSum_4a2(xs: List[int]) -> int:
+    Creates a list of elements:
+        For every element x in xs, act on it with apply and one of the cycled
+        functions: ident or double
+        If ident, add x to the resulting list
+        If double, add 2 * x to the result
+        E.g.:
+        [ident(x1), double(x2), ident(x3), double(x4)...]
+    Sum the list
+
+ -- def doubleAndSum_4b1(xs: List[int]) -> int:
+    Like 4a1, it creates a list of tuples by zipping a cycle of 1 and 2 to xs
+    and uses that to create of a list by multiplying the pairs.
+    Then reduce applies "add" to the accumulator and every item in the list
+
+ -- def doubleAndSum_4b2(xs: List[int]) -> int:
+    Creates the mapped list from 4a2
+    Uses reduce to apply "add" to the accumulator and every item in the list
+
+ -- doubleAndSum_5(xs: List[int]) -> int:
+    An abstracted version 4b2:
+        transformAndReduce is equivalent to 4b2, but the function applied to
+        the function for reduce and the cycle of functions for the map are both
+        passed in as parameters rather than statically stated.
