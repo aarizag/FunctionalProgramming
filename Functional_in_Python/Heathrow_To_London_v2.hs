@@ -50,7 +50,7 @@ find_best (a_from_a, b_from_a, a_from_b, b_from_b) = (best_A, best_B)
 -- Compare 2 paths and return shorter one
 min_p :: Path -> Path -> Path
 min_p p1 p2 = if dist p1 < dist p2 then p1 else p2  -- compare 2 paths and return shorter one
-
+,
 {-
 Combine the old best routes with the new best routes.
 Considers what street the new route is starting on and where the old route left off
