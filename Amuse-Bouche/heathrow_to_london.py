@@ -1,5 +1,6 @@
 from functools import reduce, wraps
 from typing import Any, Callable, Dict, List, Tuple, TypeVar
+from time import time
 
 
 class MetaRoad(type):
@@ -40,6 +41,7 @@ class A(Road):
             MetaRoad.oppositeRoadDict[A] = B
         super().__init__(dist)
 
+
 class B(Road):
 
     def __init__(self, dist: int):
@@ -48,8 +50,9 @@ class B(Road):
             MetaRoad.oppositeRoadDict[B] = A
         super().__init__(dist)
 
+
 class C(Road):
-    ...   # This is like pass
+    ...  # This is like pass
 
 
 class Path:
@@ -66,7 +69,7 @@ class Path:
         return st
 
     def dist(self) -> int:
-        return sum( (step.dist for step in self.steps) )
+        return sum((step.dist for step in self.steps))
 
     def endRoad(self) -> MetaRoad:
         """
@@ -98,10 +101,12 @@ class QuadPaths:
 
     def __str__(self) -> str:
         st = listToString(self.paths, start='QuadPaths:\n    ', sep='\n    ', end='')
-        return(st)
+        return (st)
 
 
 T2 = TypeVar('T2')
+
+
 def trace(func: Callable[..., T2]) -> Callable[..., T2]:
     """
     Print the function signature and return value.
@@ -135,7 +140,7 @@ def bestPath(start: Road, qp1: QuadPaths, qp2: QuadPaths, end: Road) -> Path:
     See Path.__add__().
     """
     paths = [p1 + p2 for p1 in qp1.paths if p1.startRoad() == start
-                     for p2 in qp2.paths if p1.endRoad() == p2.startRoad() and p2.endRoad() == end]
+             for p2 in qp2.paths if p1.endRoad() == p2.startRoad() and p2.endRoad() == end]
     sortd = sorted(paths, key=dist_numsteps)
     return sortd[0]
 
@@ -148,14 +153,19 @@ def dist_numsteps(p: Path) -> Tuple[int, int]:
     """
     return (p.dist(), len(p.steps))
 
+
 @trace
 def joinQuadPaths(qp1: QuadPaths, qp2: QuadPaths) -> QuadPaths:
-    joinedQuadPaths = QuadPaths([bestPath(s, qp1, qp2, e) for s in [A, B] for e in [A, B]] )
+    joinedQuadPaths = QuadPaths([bestPath(s, qp1, qp2, e) for s in [A, B] for e in [A, B]])
     return joinedQuadPaths
 
+
 T1 = TypeVar('T1')
+
+
 def listToString(aList: List[T1], start='[', sep=', ', end=']') -> str:
     return start + sep.join([str(elt) for elt in aList]) + end
+
 
 def optimalPath(allSegs: List[int]) -> Path:
     """
@@ -165,12 +175,14 @@ def optimalPath(allSegs: List[int]) -> Path:
     finalPaths = reduce(joinQuadPaths, qpList).paths
     return min(finalPaths, key=dist_numsteps)
 
-def segsToQP(aDist: int, bDist: int=0, cDist: int=0) -> QuadPaths:
-    return QuadPaths([Path([A(aDist)]),             # A -> A
-                      Path([A(aDist), C(cDist)]),   # A -> B
-                      Path([B(bDist), C(cDist)]),   # B -> A
-                      Path([B(bDist)])              # B -> B
+
+def segsToQP(aDist: int, bDist: int = 0, cDist: int = 0) -> QuadPaths:
+    return QuadPaths([Path([A(aDist)]),  # A -> A
+                      Path([A(aDist), C(cDist)]),  # A -> B
+                      Path([B(bDist), C(cDist)]),  # B -> A
+                      Path([B(bDist)])  # B -> B
                       ])
+
 
 @trace
 def toQPList(allSegs: List[int]) -> List[QuadPaths]:
@@ -188,7 +200,10 @@ def toQPList(allSegs: List[int]) -> List[QuadPaths]:
 
 
 if __name__ == '__main__':
-  # The example from the book.
-  dists = [50, 10, 30, 5, 90, 20, 40, 2, 25, 10, 8]
-  print(optimalPath(dists))
-  # => B->B. Dist: 75. [B/10, C/30, A/5, C/20, B/2, B/8],
+    # The example from the book.
+    dists = [50, 10, 30, 5, 90, 20, 40, 2, 25, 10, 8]
+    # st = time()
+    op = optimalPath(dists)
+    # print("time = ", time() - st, op)
+    print(op)
+    # => B->B. Dist: 75. [B/10, C/30, A/5, C/20, B/2, B/8],

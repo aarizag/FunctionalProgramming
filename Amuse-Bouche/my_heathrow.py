@@ -1,11 +1,13 @@
 from typing import List, Tuple
 from functools import reduce
+from time import time
 
 
 class Road:
     """
     Object representation of a Road with values to denote it's length and position on the map
     """
+
     # road_id = 0
 
     def __init__(self, distance: int, pos: str = ""):
@@ -22,6 +24,7 @@ class Path:
     """
     Object representation of a series of roads and the distance to travel those roads
     """
+
     def __init__(self, dist: int = 0, roads: List[Road] = None, start: str = None):
         self.roads = [] if roads is None else roads
         self.dist = dist
@@ -43,12 +46,12 @@ class Path:
         Define addition for Paths
 
         :param other: the Path it is being added
-        :return: A new Path with the combined distances and combined road lists as parameters (start road is unneeded)
+        :return: A new Path with the combined distances and combined road lists as parameters
         """
-        return Path(self.dist + other.dist, self.roads + other.roads)
+        return Path(self.dist + other.dist, self.roads + other.roads, start=self.start)
 
 
-def quad_paths(a: int, b: int, c: int) -> (Path, Path, Path, Path):
+def all_paths(a: int, b: int, c: int) -> (Path, Path, Path, Path):
     """
     :param a, b, c: Integers denoting the "distance" of the road
     :return: Four Paths representing both possible routes to A (top) and B (bottom)
@@ -63,12 +66,12 @@ def quad_paths(a: int, b: int, c: int) -> (Path, Path, Path, Path):
             Path(b, [road_b], start="B"))
 
 
-def find_best(a: int, b: int, c: int) -> (Path, Path):
+def find_best(r_vals) -> (Path, Path):
     """
-    :param a, b, c: Integers denoting the "distance" of the road
+    :param r_vals: A tuple containing 3 values for roads (A,B,C respectively)
     :return: A tuple containing the  (Optimum path to A, Optimum Path to B)
     """
-    (a_a, b_a, a_b, b_b) = quad_paths(a, b, c)
+    (a_a, b_a, a_b, b_b) = all_paths(*r_vals)
     return a_a if a_a < a_b else a_b, \
            b_a if b_a < b_b else b_b
 
@@ -76,7 +79,7 @@ def find_best(a: int, b: int, c: int) -> (Path, Path):
 def combine_paths(old_a: Path, old_b: Path, a: Path, b: Path) -> (Path, Path):
     """
     :param old_a, old_b: The previous best paths to A and B, respectively
-    :param a, b: The local best paths to A and B in the current "Quad Path"
+    :param a, b: The local best paths to A and B in the current set of four possible paths
     :return: A tuple containing the best local paths to A and B respectively combined with the best Path ending at the
              best local paths' starting points
              e.g. if the best local path to A starts at B, combine it with the old best path to B
@@ -92,9 +95,10 @@ def current_optimum(best: Tuple[Path, Path], r_vals: Tuple[int, int, int]) -> (P
     :param r_vals: A tuple containing 3 values for roads (A,B,C respectively)
     :return: A tuple containing the best path from start to current to A and B, respectively
     """
-    (old_a, old_b) = best
-    (new_a, new_b) = find_best(r_vals[0], r_vals[1], r_vals[2])
-    return combine_paths(old_a, old_b, new_a, new_b)
+    return combine_paths(*best, *find_best(r_vals))
+    # (old_a, old_b) = best
+    # (new_a, new_b) = find_best(*r_vals)
+    # return combine_paths(old_a, old_b, new_a, new_b)
 
 
 def optimal_path(inp: [int]) -> Path:
@@ -104,9 +108,9 @@ def optimal_path(inp: [int]) -> Path:
                 [(top road, bottom road, vertical right road connecting the other two) ...]
     :return: The fastest path traversing the series of intersections
     """
-    inp += [0] * (len(inp) % 3)  # If len(allSegs)%3 != 0, adds segments of length 0.
+    inp += [0] * (len(inp) % 3)  # If len(inp)%3 != 0, adds segments of length 0.
     roads = zip(inp[::3], inp[1::3], inp[2::3])  # split the input into a series of tuples with 3 elements each
-    accumulator = (Path(), Path())  # empty paths to start the accumulator
+    accumulator = (Path(start="A"), Path(start="B"))  # empty paths to start the accumulator
 
     (a, b) = reduce(current_optimum, roads, accumulator)
     return a if a < b else b
@@ -118,7 +122,7 @@ def print_path(p: Path, test_num: int = 0) -> None:
     :param test_num: The current test number
     :return: None
     """
-    print(f"\n\nTest {test_num} results in a Path ending at {p.roads[-1].position}\nRoads: ")
+    print(f"\n\nTest {test_num} results in a Path starting at {p.start} and ending at {p.roads[-1].position}\nRoads: ")
     for r in p.roads:
         print(r)
 
@@ -126,6 +130,9 @@ def print_path(p: Path, test_num: int = 0) -> None:
 test_input = [50, 10, 30, 5, 90, 20, 40, 2, 25, 10, 8, 0]
 test_input2 = [15, 5, 10, 10, 30, 10, 5, 20, 5, 35, 15, 20, 15, 10, 0]
 
-print_path(optimal_path(test_input), test_num=1)
+# st = time()
+op = optimal_path(test_input)
+# print("time=", time() - st)
+print_path(op, test_num=1)
 Road.road_id = 0
 print_path(optimal_path(test_input2), test_num=2)
