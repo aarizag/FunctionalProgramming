@@ -1,3 +1,5 @@
+import time
+
 
 class goldbach:
     def __init__(self):
@@ -8,9 +10,9 @@ class goldbach:
         self.takewhile = takewhile
 
     def next_prime(self, floor):
-        i = floor if floor % 2 == 1 else floor - 1
+        i = floor # if floor % 2 == 1 else floor - 1
         while self.primes[-1] < floor:
-            for p in self.takewhile((lambda x: x*x < i), self.primes):
+            for p in self.takewhile((lambda x: x*x <= i), self.primes):
                 if i % p == 0:
                     break
             else:
@@ -45,8 +47,21 @@ class goldbach:
             exceptions += [o] if not self.is_prime(o) and self.conjecture_test(o) else []
         return exceptions
 
+    def test_primes_speed(self, n):
+        nums = self.generate_odds()
+        start = time.time()
+        while len(self.primes) < n:
+            self.next_prime(next(nums))
+        end = time.time()
+        print(f"last prime = {self.primes[-1]}, found in {end-start}")
+        # (1000) last prime = 7919, found in 0.015625953674316406
+        # (10000) last prime = 104729, found in 0.3230447769165039
+        # (50000) last prime = 611953, found in 2.370232343673706
+        # print(self.primes)
 
-import time
+
+goldbach().test_primes_speed(50000)
+
 total = 0
 for i in range(10):
     start = time.time()
