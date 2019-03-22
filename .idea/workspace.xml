@@ -11,53 +11,28 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/FunctionalProgramming$Luhn.coverage" NAME="Luhn Coverage Results" MODIFIED="1551672351836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functional_in_Python" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$Abbott_sCode.coverage" NAME="Abbott'sCode Coverage Results" MODIFIED="1550471752784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Decorators" />
-    <SUITE FILE_PATH="coverage/FunctionalProgramming$sieve.coverage" NAME="sieve Coverage Results" MODIFIED="1551056035834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Decorators" />
-    <SUITE FILE_PATH="coverage/FunctionalProgramming$my_heathrow.coverage" NAME="my_heathrow Coverage Results" MODIFIED="1552877393310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Amuse-Bouche" />
+    <SUITE FILE_PATH="coverage/FunctionalProgramming$sieve.coverage" NAME="sieve Coverage Results" MODIFIED="1553231589592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Decorators" />
+    <SUITE FILE_PATH="coverage/FunctionalProgramming$my_heathrow.coverage" NAME="my_heathrow Coverage Results" MODIFIED="1553223072630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Amuse-Bouche" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$read_csv.coverage" NAME="read_csv Coverage Results" MODIFIED="1551128505058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class_unrelated" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$Python3_7.coverage" NAME="Python3_7 Coverage Results" MODIFIED="1548872735304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Intro" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$goldbach_conjecture.coverage" NAME="goldbach_conjecture Coverage Results" MODIFIED="1549920247565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IntroToHaskell" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$cosine.coverage" NAME="cosine Coverage Results" MODIFIED="1548872789077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Intro" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$walker.coverage" NAME="walker Coverage Results" MODIFIED="1550091926486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class_unrelated" />
-    <SUITE FILE_PATH="coverage/FunctionalProgramming$goldbach_conjecture_remade_.coverage" NAME="goldbach_conjecture(remade) Coverage Results" MODIFIED="1549605920978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IntroToHaskell" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$Pyrsistent_ex.coverage" NAME="Pyrsistent_ex Coverage Results" MODIFIED="1551661981527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Functional_in_Python" />
+    <SUITE FILE_PATH="coverage/FunctionalProgramming$goldbach_conjecture_remade_.coverage" NAME="goldbach_conjecture(remade) Coverage Results" MODIFIED="1553231267335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/IntroToHaskell" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$temp.coverage" NAME="temp Coverage Results" MODIFIED="1548872758296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Intro" />
     <SUITE FILE_PATH="coverage/FunctionalProgramming$generate_csv.coverage" NAME="generate_csv Coverage Results" MODIFIED="1551128168263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class_unrelated" />
-    <SUITE FILE_PATH="coverage/FunctionalProgramming$heathrow_to_london.coverage" NAME="heathrow_to_london Coverage Results" MODIFIED="1552876388009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Amuse-Bouche" />
+    <SUITE FILE_PATH="coverage/FunctionalProgramming$heathrow_to_london.coverage" NAME="heathrow_to_london Coverage Results" MODIFIED="1552879798010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Amuse-Bouche" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Functional_in_Python/Heathrow_To_London_v2.hs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="108" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Amuse-Bouche/my_heathrow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+            <state relative-caret-position="-1411">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
-                <element signature="e#1440#1559#0" />
-                <element signature="e#1802#1935#0" />
-                <element signature="e#2879#3137#0" />
-                <element signature="e#3632#3760#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Amuse-Bouche/heathrow_to_london.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2771">
-              <caret line="181" column="32" lean-forward="true" selection-start-line="181" selection-start-column="32" selection-end-line="181" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,6 +63,7 @@
       <find>&amp;gt;</find>
       <find>&amp;#39</find>
       <find>;</find>
+      <find>p@</find>
     </findStrings>
     <replaceStrings>
       <replace>inp</replace>
@@ -138,9 +114,7 @@
         <option value="$PROJECT_DIR$/class_unrelated/graphicsCrawlerDisplay.py" />
         <option value="$PROJECT_DIR$/IntroToHaskell2/nPrimes.hs" />
         <option value="$PROJECT_DIR$/Decorators/Abbott'sCode.py" />
-        <option value="$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture(remade).py" />
         <option value="$PROJECT_DIR$/Decorators/various_fibinacci.hs" />
-        <option value="$PROJECT_DIR$/Decorators/sieve.py" />
         <option value="$PROJECT_DIR$/class_unrelated/generate_csv.py" />
         <option value="$PROJECT_DIR$/class_unrelated/read_csv.py" />
         <option value="$PROJECT_DIR$/Functional_in_Python/Abbott-Luhn.hs" />
@@ -154,15 +128,18 @@
         <option value="$PROJECT_DIR$/Amuse-Bouche/test.hs" />
         <option value="$PROJECT_DIR$/Amuse-Bouche/double_and_sum.py" />
         <option value="$PROJECT_DIR$/Amuse-Bouche/DAS_comments.txt" />
-        <option value="$PROJECT_DIR$/Amuse-Bouche/heathrow_to_london.py" />
         <option value="$PROJECT_DIR$/Functional_in_Python/Heathrow_To_London_v2.hs" />
+        <option value="$PROJECT_DIR$/Amuse-Bouche/heathrow_to_london.py" />
+        <option value="$PROJECT_DIR$/Amuse-Bouche/heathrow_to_london.hs" />
         <option value="$PROJECT_DIR$/Amuse-Bouche/my_heathrow.py" />
+        <option value="$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture(remade).py" />
+        <option value="$PROJECT_DIR$/Decorators/sieve.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
+    <option name="x" value="516" />
+    <option name="y" value="-27" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
@@ -172,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,12 +164,23 @@
             <path>
               <item name="FunctionalProgramming" type="b2602c69:ProjectViewProjectNode" />
               <item name="FunctionalProgramming" type="462c0819:PsiDirectoryNode" />
+              <item name="Decorators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FunctionalProgramming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FunctionalProgramming" type="462c0819:PsiDirectoryNode" />
               <item name="Functional_in_Python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FunctionalProgramming" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FunctionalProgramming" type="462c0819:PsiDirectoryNode" />
+              <item name="IntroToHaskell" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.my_heathrow">
+  <component name="RunManager" selected="Python.sieve">
     <configuration name="Luhn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FunctionalProgramming" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -236,28 +223,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functional_in_Python/Luhn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Pyrsistent_ex" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FunctionalProgramming" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Functional_in_Python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functional_in_Python/Pyrsistent_ex.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,6 +248,28 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="goldbach_conjecture(remade)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FunctionalProgramming" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/IntroToHaskell" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture(remade).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -332,7 +319,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="read_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sieve" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FunctionalProgramming" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -340,12 +327,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/class_unrelated" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Decorators" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/class_unrelated/read_csv.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Decorators/sieve.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -357,18 +344,18 @@
     <list>
       <item itemvalue="Python.Python3_7" />
       <item itemvalue="Python.Luhn" />
-      <item itemvalue="Python.read_csv" />
-      <item itemvalue="Python.Pyrsistent_ex" />
       <item itemvalue="Python.my_heathrow" />
       <item itemvalue="Python.heathrow_to_london" />
+      <item itemvalue="Python.sieve" />
+      <item itemvalue="Python.goldbach_conjecture(remade)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sieve" />
+        <item itemvalue="Python.goldbach_conjecture(remade)" />
         <item itemvalue="Python.my_heathrow" />
         <item itemvalue="Python.heathrow_to_london" />
         <item itemvalue="Python.Luhn" />
-        <item itemvalue="Python.Pyrsistent_ex" />
-        <item itemvalue="Python.read_csv" />
       </list>
     </recent_temporary>
   </component>
@@ -410,12 +397,13 @@
       <workItem from="1551569148222" duration="27300000" />
       <workItem from="1551676654825" duration="16770000" />
       <workItem from="1552280038584" duration="15463000" />
-      <workItem from="1552495065531" duration="33139000" />
+      <workItem from="1552495065531" duration="38546000" />
+      <workItem from="1553220133146" duration="10910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239804000" />
+    <option name="totallyTimeSpent" value="256121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,7 +442,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49820143" visible="true" weight="0.21376519" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49820143" visible="true" weight="0.21700405" />
       <window_info id="Structure" order="2" sideWeight="0.5009009" side_tool="true" weight="0.47683108" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3285968" />
@@ -480,31 +468,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Intro/choose.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#14#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Intro/cosine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Intro/do_twice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToHaskell/kevin_hw.hs" />
     <entry file="file://$PROJECT_DIR$/IntroToHaskell/class_notes.hs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -519,13 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToHaskell2/testing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IntroToHaskell2/whileInHaskell.hs" />
     <entry file="file://$USER_HOME$/Downloads/final-haskell-submission.hs">
       <provider selected="true" editor-type-id="text-editor" />
@@ -533,22 +489,12 @@
     <entry file="file://$USER_HOME$/Downloads/python-submission.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToHaskell2/while.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IntroToHaskell2/while.hs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToHaskell2/python-submission.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/class_unrelated/discrete.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -623,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture(remade).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Fibonacci.hs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -658,13 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2805">
           <caret line="166" selection-start-line="166" selection-end-line="181" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Decorators/sieve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -739,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Functional_in_Python/Abbott-Luhn.hs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Functional_in_Python/Luhn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -806,33 +731,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Functional_in_Python/Heathrow_To_London_v2.hs">
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/1846352097/time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="108" />
+        <state relative-caret-position="99">
+          <caret line="249" column="4" selection-start-line="249" selection-start-column="4" selection-end-line="249" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Amuse-Bouche/heathrow_to_london.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2771">
-          <caret line="181" column="32" lean-forward="true" selection-start-line="181" selection-start-column="32" selection-end-line="181" selection-end-column="32" />
+        <state relative-caret-position="174">
+          <caret line="209" lean-forward="true" selection-start-line="209" selection-end-line="209" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Functional_in_Python/Abbott-Luhn.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntroToHaskell2/python-submission.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntroToHaskell2/while.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntroToHaskell2/testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Functional_in_Python/Heathrow_To_London_v2.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/1846352097/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="3621" column="6" selection-start-line="3621" selection-start-column="6" selection-end-line="3621" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Decorators/sieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-404">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="e#32#84#0" />
+            <element signature="e#936#1039#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntroToHaskell/goldbach_conjecture(remade).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="58" column="65" selection-start-line="58" selection-start-column="65" selection-end-line="58" selection-end-column="65" />
+          <folding>
+            <element signature="e#1014#1329#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amuse-Bouche/OperatorWrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3150">
+          <caret line="235" column="53" selection-start-line="235" selection-start-column="53" selection-end-line="235" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Amuse-Bouche/heathrow_to_london.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="173" column="23" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Amuse-Bouche/my_heathrow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="44" column="48" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+        <state relative-caret-position="-1411">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
-            <element signature="e#1440#1559#0" />
-            <element signature="e#1802#1935#0" />
-            <element signature="e#2879#3137#0" />
-            <element signature="e#3632#3760#0" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
