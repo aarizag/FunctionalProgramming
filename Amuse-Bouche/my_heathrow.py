@@ -1,20 +1,14 @@
 from typing import List, Tuple
 from functools import reduce
-from time import time
 
 
 class Road:
     """
     Object representation of a Road with values to denote it's length and position on the map
     """
-
-    # road_id = 0
-
     def __init__(self, distance: int, pos: str = ""):
         self.distance = distance
         self.position = pos
-        # self.id = Road.road_id
-        # Road.road_id += 1
 
     def __str__(self):
         return f"Pos: {self.position}  |  Dist: {self.distance}"
@@ -70,6 +64,8 @@ def find_best(r_vals) -> (Path, Path):
     """
     :param r_vals: A tuple containing 3 values for roads (A,B,C respectively)
     :return: A tuple containing the  (Optimum path to A, Optimum Path to B)
+    :var: (a_a, b_a, a_b, b_b) refer to the paths starting and ending locations,
+          e.g. a_a = start at a, end at a
     """
     (a_a, b_a, a_b, b_b) = all_paths(*r_vals)
     return a_a if a_a < a_b else a_b, \
@@ -96,9 +92,6 @@ def current_optimum(best: Tuple[Path, Path], r_vals: Tuple[int, int, int]) -> (P
     :return: A tuple containing the best path from start to current to A and B, respectively
     """
     return combine_paths(*best, *find_best(r_vals))
-    # (old_a, old_b) = best
-    # (new_a, new_b) = find_best(*r_vals)
-    # return combine_paths(old_a, old_b, new_a, new_b)
 
 
 def optimal_path(inp: [int]) -> Path:
@@ -130,9 +123,7 @@ def print_path(p: Path, test_num: int = 0) -> None:
 test_input = [50, 10, 30, 5, 90, 20, 40, 2, 25, 10, 8, 0]
 test_input2 = [15, 5, 10, 10, 30, 10, 5, 20, 5, 35, 15, 20, 15, 10, 0]
 
-# st = time()
 op = optimal_path(test_input)
-# print("time=", time() - st)
 print_path(op, test_num=1)
 Road.road_id = 0
 print_path(optimal_path(test_input2), test_num=2)

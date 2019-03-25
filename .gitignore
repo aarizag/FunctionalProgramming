@@ -1,4 +1,3 @@
-./venv/*
-./venv/
-venv
 class_unrelated/
+.idea/
+venv/
