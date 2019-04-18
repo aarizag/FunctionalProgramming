@@ -10,7 +10,7 @@ class Road:
         self.distance = distance
         self.position = pos
 
-    def __str__(self):
+    def g(self):
         return f"Pos: {self.position}  |  Dist: {self.distance}"
 
 
